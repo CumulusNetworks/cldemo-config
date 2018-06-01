@@ -4,14 +4,14 @@
   tasks:
     - name: copy interfaces
       copy: src=bgp-unnumbered/{{ansible_hostname}}/interfaces dest=/etc/network/
-    - name: copy Quagga daemons
-      copy: src=bgp-unnumbered/{{ansible_hostname}}/daemons dest=/etc/quagga/
-    - name: copy Quagga conf
-      copy: src=bgp-unnumbered/{{ansible_hostname}}/Quagga.conf dest=/etc/quagga/
+    - name: copy frr daemons
+      copy: src=bgp-unnumbered/{{ansible_hostname}}/daemons dest=/etc/frr/
+    - name: copy frr conf
+      copy: src=bgp-unnumbered/{{ansible_hostname}}/frr.conf dest=/etc/frr/
     - name: reload networking
       command: ifreload -a
-    - name: reload quagga
-      service: name=quagga state=restarted
+    - name: reload frr
+      service: name=frr state=restarted
 
 - hosts: servers
   become: yes
