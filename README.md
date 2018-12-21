@@ -81,18 +81,18 @@ Use SSH to login to the out-of-band management server.
 
 ### 6). Push Configuration Files to Devices
 
-ansible-playbook bgp-unnumbered.yml
+ansible-playbook deploy-bgp-unnumbered.yml
 
 Note the keyword "bgp-unnumbered" in the command; this can be replaced with whatever example configuration you would like to deploy (such as "ospf-unnumbered" or "ospf-numbered" ).
 
- * OSPF Numbered --> "ospf-numbered"
- * OSPF Unnumbered --> "ospf-unnumbered"
- * BGP Numbered --> "bgp-numbered"
- * BGP Unnumbered --> "bgp-unnumbered"
- * OSPF Numbered with IPv6 --> "ospf-numbered-ipv6"
- * OSPF Unnumbered with IPv6 --> "ospf-unnumbered-ipv6"
- * BGP Numbered with IPv6 --> "bgp-numbered-ipv6"
- * BGP Unnumbered with IPv6 --> "bgp-unnumbered-ipv6"
+ * OSPF Numbered --> "deply-ospf-numbered.yml"
+ * OSPF Unnumbered --> "deploy-ospf-unnumbered.yml"
+ * BGP Numbered --> "deploy-bgp-numbered.yml"
+ * BGP Unnumbered --> "deploy-bgp-unnumbered.yml"
+ * OSPF Numbered with IPv6 --> "deploy-ospf-numbered-ipv6.yml"
+ * OSPF Unnumbered with IPv6 --> "deploy-ospf-unnumbered-ipv6.yml"
+ * BGP Numbered with IPv6 --> "deploy-bgp-numbered-ipv6.yml"
+ * BGP Unnumbered with IPv6 --> "deploy-bgp-unnumbered-ipv6.yml"
 
 
 ### 7). Experiment
