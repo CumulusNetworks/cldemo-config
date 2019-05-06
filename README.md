@@ -85,7 +85,7 @@ ansible-playbook deploy-bgp-unnumbered.yml
 
 Note the keyword "bgp-unnumbered" in the command; this can be replaced with whatever example configuration you would like to deploy (such as "ospf-unnumbered" or "ospf-numbered" ).
 
- * OSPF Numbered --> "deply-ospf-numbered.yml"
+ * OSPF Numbered --> "deploy-ospf-numbered.yml"
  * OSPF Unnumbered --> "deploy-ospf-unnumbered.yml"
  * BGP Numbered --> "deploy-bgp-numbered.yml"
  * BGP Unnumbered --> "deploy-bgp-unnumbered.yml"
